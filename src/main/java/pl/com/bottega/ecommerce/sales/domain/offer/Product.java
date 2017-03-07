@@ -13,9 +13,9 @@ public class Product {
 
 	private Date snapshotDate;
 
-	private String type;
+	private ProductType type;
 
-	public Product(String id, BigDecimal price, String name, Date snapshotDate, String type) {
+	public Product(String id, BigDecimal price, String name, Date snapshotDate, ProductType type) {
 		super();
 		Id = id;
 		this.price = price;
@@ -40,7 +40,7 @@ public class Product {
 		return snapshotDate;
 	}
 
-	public String getType() {
+	public ProductType getType() {
 		return type;
 	}
 
